@@ -1,4 +1,4 @@
- import React, { useMemo, useState } from "react";
+ 
 
 type MenuItem = {
   name: string;
@@ -166,7 +166,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   );
 }
 
-export default function LuxuryBakeryWebsite(): JSX.Element {
+export default function LuxuryBakeryWebsite() {
   const [menuOpen, setMenuOpen] = useState(false);
   const allItemsCount = categories.reduce((sum, category) => sum + category.items.length, 0);
 
